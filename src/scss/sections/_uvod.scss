@@ -1,0 +1,24 @@
+#uvod {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 50rem;
+    padding-top: 5rem;
+    background: url("../assets/img/1-uvod.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    h1 {
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+        letter-spacing: 0.4rem;
+    }
+    @include media-breakpoint-up(md) {
+        h1 {
+	    margin-left: 1em;
+            font-size: 3.5rem;
+            line-height: 4rem;
+        }
+    }
+}
