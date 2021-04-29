@@ -10259,37 +10259,82 @@ body {
   padding-top: 5rem;
 }
 #oznameni p {
-  font-size: 2rem;
+  font-size: 1.4rem;
+}
+@media (min-width: 768px) {
+  #oznameni p {
+    font-size: 1.6rem;
+  }
+}
+@media (min-width: 992px) {
+  #oznameni p {
+    font-size: 1.8rem;
+  }
+}
+@media (min-width: 1200px) {
+  #oznameni p {
+    font-size: 2.2rem;
+  }
 }
 
 #program {
-  padding: 10rem 0;
+  padding-top: 5rem;
 }
-#program .featured-text {
-  padding: 2rem;
+@media (max-width: 575.98px) {
+  #program {
+    text-align: center;
+  }
+}
+#program h1 {
+  margin: 3rem 0 0 2rem;
+}
+#program p {
+  font-size: 1.4rem;
+}
+@media (min-width: 768px) {
+  #program p {
+    font-size: 1.6rem;
+  }
 }
 @media (min-width: 992px) {
-  #program .featured-text {
-    padding: 0 0 0 2rem;
+  #program p {
+    font-size: 1.8rem;
+  }
+}
+@media (min-width: 1200px) {
+  #program p {
+    font-size: 2.2rem;
   }
 }
 
 #prosba {
-  padding: 10rem 0;
+  padding-top: 5rem;
 }
-#prosba .featured-text {
-  padding: 2rem;
+#prosba p {
+  font-size: 1.4rem;
 }
-@media (min-width: 992px) {
-  #prosba .featured-text {
-    padding: 0 0 0 2rem;
+@media (min-width: 768px) {
+  #prosba p {
+    font-size: 1.6rem;
   }
 }
 
 #kontakty {
   padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+#kontakty p {
+  font-size: 1.4rem;
+}
+@media (min-width: 768px) {
+  #kontakty p {
+    font-size: 1.6rem;
+  }
+}
+#kontakty p#address {
+  font-size: 0.8em;
 }
 
 .footer {
-  padding: 5rem 0;
+  padding: 1rem 0;
 }
