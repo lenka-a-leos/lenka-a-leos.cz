@@ -51,57 +51,73 @@ html(lang='cs')
 
         // Oznameni
         section#oznameni.text-center
-            .container
+            .container-fluid
                 .row
-                    .col-lg-12
-                        h1.text-black.mb-4 Oznámení
-                .row
-                    .col-lg-5.offset-lg-2
+                    .col-sm-12
+                        h1.mb-4 Oznámení
+                .row.d-flex.flex-wrap.align-items-center
+                    .col-sm-5.offset-sm-2
                         p.text-black-50.mt-4
                             | Společnou cestou dál půjdeme,
                         p.text-black-50
                             | proto si své ano řekneme.
-                    .col-lg-3
+                    .col-sm-3
                         img.img-fluid(src='assets/img/ptak-na-vetvi.png', alt='...')
-                .row
-                    .col-lg-3.offset-lg-2
+                .row.d-flex.flex-wrap.align-items-center
+                    .col-sm-3.offset-sm-2
                         img.img-fluid(src='assets/img/ptak-s-kytkou.png', alt='...')
-                    .col-lg-5
+                    .col-sm-5
                         p.text-black-50.mt-4
                             | Dne 14.8.2021 v 11.00 hodin
                         p.text-black-50
                             | na hradě Valdštejně.
 
         // Program
-        section#program.text-center
+        section#program
             .container
-                .row
-                    .col-xl-8.col-lg-7
-                        img.img-fluid.mb-3.mb-lg-0(src='assets/img/3-program.png', alt='...')
-                    .col-xl-4.col-lg-5
-                        .featured-text.text-center.text-lg-left
-                            h4 Program
+                .row.d-flex.flex-wrap.align-items-center
+                    .col-sm-3.offset-sm-2
+                        img.img-fluid(src='assets/img/ptak-s-kytkou2.png', alt='...')
+                    .col-sm-5
+                        h1 Program
+                .row.d-flex.flex-wrap.align-items-center
+                    .col-sm-7.offset-sm-5
+                        p.text-black-50.mt-4
+                            | 11.00 slavnostní obřad
+                        p.text-black-50
+                            | 13.00 svatební oběd pro rodinu
+                        p.text-black-50
+                            | 16.00 odpolední veselice
 
         // Prosba
-        section#prosba.text-center
-            .container
-                .row
-                    .col-xl-8.col-lg-7
-                        img.img-fluid.mb-3.mb-lg-0(src='assets/img/4-prosba.png', alt='...')
-                    .col-xl-4.col-lg-5
-                        .featured-text.text-center.text-lg-left
-                            h4 Prosba
+        section#prosba
+            .container-fluid
+                .row.d-flex.flex-wrap.align-items-center
+                    .col-6.offset-2
+                        p.text-black-50.mt-4
+                            | Drazí hosté,
+                        p.text-black-50
+                            | budeme potěšeni, když s námi přijdete prožít a oslavit náš svatební den.
+                            | Dejte nám prosím nejpozději do začátku léta vědět, zda se s Vámi uvidíme.
+                        p.text-black-50
+                            | Děkujeme
+                    .col-2
+                        img.img-fluid(src='assets/img/kytka-s-pentli.png', alt='...')
 
         // Kontakty
         section#kontakty
-            .container
-                .row
-                    .col-lg-8
-                        h4 Kontakty
-                        | Budete-li mít jakékoli dotazy, neváhejte se na nás obrátit.
-                        | Těšíme se na Vás.
-                        | Lenka Ryvolová a Leoš Klaban
-                        | Marie Pujmanové 1751/1, 251 01 Říčany
+            .container-fluid
+                .row.d-flex.flex-wrap.align-items-center
+                    .col-8.offset-2
+                        h1 Kontakty
+                .row.d-flex.flex-wrap.align-items-center
+                    .col-8.offset-2
+                        p.text-black-50.mt-4
+                            | Budete-li mít jakékoli dotazy, neváhejte se na nás obrátit. Těšíme se na Vás.
+                        p.text-black-50.mt-4.text-right.mb-0
+                            | Lenka Ryvolová a Leoš Klaban
+                        p#address.text-black-50.text-right
+                            | Marie Pujmanové 1751/1, 251 01 Říčany
 
         // Footer
         footer.footer.bg-black.small.text-center.text-white-50

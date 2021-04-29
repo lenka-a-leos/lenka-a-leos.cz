@@ -1,3 +1,15 @@
 #kontakty {
     padding-top: 5rem;
+    padding-bottom: 5rem;
+    p {
+        font-size: 1.4rem;
+    }
+    @include media-breakpoint-up(md) {
+        p {
+            font-size: 1.6rem;
+        }
+    }
+    p#address {
+        font-size: 0.8em;
+    }
 }

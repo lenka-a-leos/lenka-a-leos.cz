@@ -1,9 +1,11 @@
 #prosba {
-    padding: 10rem 0;
-    .featured-text {
-        padding: 2rem;
-        @include media-breakpoint-up(lg) {
-            padding: 0 0 0 2rem;
+    padding-top: 5rem;
+    p {
+        font-size: 1.4rem;
+    }
+    @include media-breakpoint-up(md) {
+        p {
+            font-size: 1.6rem;
         }
     }
 }

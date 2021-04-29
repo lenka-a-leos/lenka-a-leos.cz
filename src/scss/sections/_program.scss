@@ -1,9 +1,27 @@
 #program {
-    padding: 10rem 0;
-    .featured-text {
-        padding: 2rem;
-        @include media-breakpoint-up(lg) {
-            padding: 0 0 0 2rem;
+    padding-top: 5rem;
+    @include media-breakpoint-down(xs) {
+        text-align: center;
+    }
+    h1 {
+        margin: 3rem 0 0 2rem;
+    }
+    p {
+        font-size: 1.4rem;
+    }
+    @include media-breakpoint-up(md) {
+        p {
+            font-size: 1.6rem;
+        }
+    }
+    @include media-breakpoint-up(lg) {
+        p {
+            font-size: 1.8rem;
+        }
+    }
+    @include media-breakpoint-up(xl) {
+        p {
+            font-size: 2.2rem;
         }
     }
 }
