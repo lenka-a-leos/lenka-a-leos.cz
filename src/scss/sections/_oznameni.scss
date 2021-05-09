@@ -1,5 +1,6 @@
 #oznameni {
-    padding-top: 5rem;
+    padding-top: 1rem;
+    padding-bottom: 10rem;
     p {
         font-size: 1.4rem;
     }
@@ -7,6 +8,10 @@
         p {
             font-size: 1.6rem;
         }
+	h1 {
+            margin-bottom: 4rem;
+	}
+	padding-top: 3rem;
     }
     @include media-breakpoint-up(lg) {
         p {

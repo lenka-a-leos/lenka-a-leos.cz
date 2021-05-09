@@ -47,4 +47,13 @@
     navbarCollapse();
     // Collapse the navbar when page is scrolled
     $(window).scroll(navbarCollapse);
+
+    // Make it a tiny bit harder to mine the emails
+    $(document).ready(function() {
+        var x = ["ryvolova", "l", "cz", "seznam", "&#46;", "&#64;", "klaban", "leos"];
+        var lenka = x[1] + x[4] + x[0] + x[5] + x[3] + x[4] + x[2];
+        $(".lenka-email").html(lenka);
+        var leos = x[7] + x[4] + x[6] + x[5] + x[3] + x[4] + x[2];
+        $(".leos-email").html(leos);
+    });
 })(jQuery); // End of use strict

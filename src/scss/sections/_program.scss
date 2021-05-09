@@ -1,18 +1,23 @@
 #program {
-    padding-top: 5rem;
-    @include media-breakpoint-down(xs) {
-        text-align: center;
-    }
+    padding-top: 1rem;
+    padding-bottom: 13rem;
     h1 {
         margin: 3rem 0 0 2rem;
     }
     p {
         font-size: 1.4rem;
     }
+    a {
+        font-size: 1.4rem;
+    }
+    @include media-breakpoint-down(xs) {
+        text-align: center;
+    }
     @include media-breakpoint-up(md) {
         p {
             font-size: 1.6rem;
         }
+	padding-top: 3rem;
     }
     @include media-breakpoint-up(lg) {
         p {

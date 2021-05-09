@@ -1,0 +1,25 @@
+#aktualne {
+    padding-top: 1rem;
+    padding-bottom: 11rem;
+    p {
+        font-size: 1.4rem;
+    }
+    @include media-breakpoint-up(md) {
+        p {
+            font-size: 1.6rem;
+        }
+	padding-top: 5rem;
+    }
+    @include media-breakpoint-down(xs) {
+        .rotate90 {
+            -webkit-transform:rotate(90deg);
+            -moz-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+            -o-transform: rotate(90deg);
+            transform: rotate(90deg);
+        }
+	#drazi {
+            margin-top: -4rem !important;
+	}
+    }
+}

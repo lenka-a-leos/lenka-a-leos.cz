@@ -4,8 +4,9 @@
     height: auto;
     min-height: 50rem;
     padding-top: 5rem;
-    background: url("../assets/img/1-uvod.png");
-    background-position: center;
+    background: url("../assets/img/uvod.png");
+    background-position-y: center;
+    background-position-x: right;
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
@@ -13,6 +14,7 @@
         font-size: 2.5rem;
         line-height: 2.5rem;
         letter-spacing: 0.4rem;
+	text-shadow: 2px 2px 4px #fff;
     }
     @include media-breakpoint-up(md) {
         h1 {
