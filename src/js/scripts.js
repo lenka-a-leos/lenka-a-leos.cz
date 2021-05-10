@@ -48,12 +48,33 @@
     // Collapse the navbar when page is scrolled
     $(window).scroll(navbarCollapse);
 
+		var decodeEntities = (function() {
+				var element = document.createElement('div');
+
+				function decodeHTMLEntities (str) {
+						if(str && typeof str === 'string') {
+								// strip script/html tags
+								//str = str.replace(/<script[^>]*>([\S\s]*?)<\/script>/gmi, '');
+								//str = str.replace(/<\/?\w(?:[^"'>]|"[^"]*"|'[^']*')*>/gmi, '');
+								element.innerHTML = str;
+								str = element.textContent;
+								element.textContent = '';
+						}
+
+						return str;
+				}
+
+				return decodeHTMLEntities;
+		})();
+  
     // Make it a tiny bit harder to mine the emails
     $(document).ready(function() {
-        var x = ["ryvolova", "l", "cz", "seznam", "&#46;", "&#64;", "klaban", "leos"];
-        var lenka = x[1] + x[4] + x[0] + x[5] + x[3] + x[4] + x[2];
-        $(".lenka-email").html(lenka);
-        var leos = x[7] + x[4] + x[6] + x[5] + x[3] + x[4] + x[2];
-        $(".leos-email").html(leos);
+        var x = ["l", "ryvolova", "cz", "seznam", "&#46;", "&#64;", "jc", "leos"];
+        var lenka = decodeEntities(x[1] + x[4] + x[0] + x[5] + x[3] + x[4] + x[2]);
+        $(".lenka-email").attr("href", "mailto:" + lenka);
+        $(".lenka-email").text(lenka);
+        var leos = decodeEntities(x[7] + x[6] + x[5] + x[3] + x[4] + x[2]);
+        $(".leos-email").attr("href", "mailto:" + leos);
+        $(".leos-email").text(leos);
     });
 })(jQuery); // End of use strict
