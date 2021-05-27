@@ -10277,43 +10277,6 @@ body {
   }
 }
 
-#program {
-  padding-top: 1rem;
-  padding-bottom: 13rem;
-}
-#program h1 {
-  margin: 3rem 0 0 2rem;
-}
-#program p {
-  font-size: 1.4rem;
-}
-#program a {
-  font-size: 1.4rem;
-}
-@media (max-width: 575.98px) {
-  #program {
-    text-align: center;
-  }
-}
-@media (min-width: 768px) {
-  #program {
-    padding-top: 3rem;
-  }
-  #program p {
-    font-size: 1.6rem;
-  }
-}
-@media (min-width: 992px) {
-  #program p {
-    font-size: 1.8rem;
-  }
-}
-@media (min-width: 1200px) {
-  #program p {
-    font-size: 2.2rem;
-  }
-}
-
 #aktualne {
   padding-top: 1rem;
   padding-bottom: 11rem;
@@ -10338,9 +10301,51 @@ body {
   }
 }
 
+#program {
+  padding-top: 1rem;
+  padding-bottom: 13rem;
+}
+#program h1 {
+  text-align: center;
+}
+#program dl {
+  font-size: 1.4rem;
+}
+@media (min-width: 768px) {
+  #program {
+    padding-top: 3rem;
+  }
+}
+#program dl {
+  display: grid;
+  grid-template-columns: -webkit-max-content auto;
+  grid-template-columns: max-content auto;
+}
+#program dt {
+  grid-column-start: 1;
+}
+#program dd {
+  grid-column-start: 2;
+  margin-left: 1rem;
+}
+
+#obrad {
+  padding-top: 1rem;
+  padding-bottom: 13rem;
+}
+#obrad h1 {
+  text-align: center;
+}
+#obrad h2, #obrad li {
+  font-size: 1.4rem;
+}
+
 #kontakty {
   padding-top: 1rem;
   padding-bottom: 10rem;
+}
+#kontakty h1 {
+  text-align: center;
 }
 #kontakty p {
   font-size: 1.4rem;
