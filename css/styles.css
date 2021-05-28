@@ -10336,7 +10336,29 @@ body {
 #obrad h1 {
   text-align: center;
 }
-#obrad h2, #obrad li {
+#obrad li {
+  font-size: 1.4rem;
+}
+
+#veselice {
+  padding-top: 1rem;
+  padding-bottom: 13rem;
+}
+#veselice h1 {
+  text-align: center;
+}
+#veselice p, #veselice li, #veselice strong {
+  font-size: 1.4rem;
+}
+
+#dary {
+  padding-top: 1rem;
+  padding-bottom: 13rem;
+}
+#dary h1 {
+  text-align: center;
+}
+#dary h2, #dary p {
   font-size: 1.4rem;
 }
 
@@ -10354,14 +10376,7 @@ body {
   #kontakty {
     padding-top: 3rem;
   }
-  #kontakty p {
-    font-size: 1.6rem;
-  }
 }
-#kontakty p#address {
-  font-size: 0.8em;
-}
-
 .footer {
   padding: 1rem 0;
 }
