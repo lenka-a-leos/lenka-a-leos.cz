@@ -2,31 +2,23 @@
     padding-top: 1rem;
     padding-bottom: 13rem;
     h1 {
-        margin: 3rem 0 0 2rem;
+	text-align: center;
     }
-    p {
+    dl {
         font-size: 1.4rem;
-    }
-    a {
-        font-size: 1.4rem;
-    }
-    @include media-breakpoint-down(xs) {
-        text-align: center;
     }
     @include media-breakpoint-up(md) {
-        p {
-            font-size: 1.6rem;
-        }
-	padding-top: 3rem;
+        padding-top: 3rem;
     }
-    @include media-breakpoint-up(lg) {
-        p {
-            font-size: 1.8rem;
-        }
+    dl {
+        display: grid;
+        grid-template-columns: max-content auto;
     }
-    @include media-breakpoint-up(xl) {
-        p {
-            font-size: 2.2rem;
-        }
+    dt {
+        grid-column-start: 1;
+    }
+    dd {
+        grid-column-start: 2;
+        margin-left: 1rem;
     }
 }

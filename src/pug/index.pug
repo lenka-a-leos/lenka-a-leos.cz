@@ -35,9 +35,15 @@ html(lang='cs')
                         li.nav-item
                             a.nav-link.js-scroll-trigger(href='#oznameni') Oznámení
                         li.nav-item
+                            a.nav-link.js-scroll-trigger(href='#aktualne') Aktuálně
+                        li.nav-item
                             a.nav-link.js-scroll-trigger(href='#program') Program
                         li.nav-item
-                            a.nav-link.js-scroll-trigger(href='#aktualne') Aktuálně
+                            a.nav-link.js-scroll-trigger(href='#obrad') Obřad
+                        li.nav-item
+                            a.nav-link.js-scroll-trigger(href='#veselice') Veselice
+                        li.nav-item
+                            a.nav-link.js-scroll-trigger(href='#dary') Dary
                         li.nav-item
                             a.nav-link.js-scroll-trigger(href='#kontakty') Kontakty
 
@@ -64,13 +70,31 @@ html(lang='cs')
                     .col-sm-3
                         img.img-fluid(src='assets/img/ptak-na-vetvi.png', alt='...')
                 .row.d-flex.flex-wrap.align-items-center
-                    .col-sm-3.offset-sm-2
-                        img.img-fluid(src='assets/img/ptak-s-kytkou.png', alt='...')
-                    .col-sm-5
+                    .col-sm-5.offset-sm-2
                         p.text-black-50.mt-4
                             | Dne 14.8.2021 v 11.00 hodin
                         p.text-black-50
                             | na hradě Valdštejně.
+
+        // Aktualne
+        section#aktualne
+            .container
+                .row.d-flex.flex-wrap.align-items-center
+                    .col-sm-2.offset-sm-2
+                        img.img-fluid.d-block.mx-auto.rotate90(src='assets/img/kytka-s-pentli.png', alt='...')
+                    .col-sm-6
+                        h2.mt-4#drazi
+                            | Drazí hosté,
+                        p.text-black-50
+                            | budeme potěšeni, když s námi přijdete prožít a oslavit náš svatební den.
+                        p.text-black-50
+                            | Dejte nám prosím nejpozději do 1.7. vědět, zda se s Vámi uvidíme.
+                        p.text-black-50
+                            | Děkujeme
+                        p.text-black-50
+                            | Průběžně sem budeme doplňovat další informace, kdyby Vás cokoliv napadlo, piště, volejte... Sledujte průběžně náš web.
+
+
 
         // Program
         section#program
@@ -80,34 +104,100 @@ html(lang='cs')
                         img.img-fluid(src='assets/img/ptak-s-kytkou2.png', alt='...')
                     .col-sm-5
                         h1 Program
-                .row.d-flex.flex-wrap.align-items-center
-                    .col-sm-7.offset-sm-5
-                        p.text-black-50.mt-4
-                            | 11.00 slavnostní obřad
-                            a(href='https://goo.gl/maps/ECD7vbfoDcc1eEPF8') (mapa)
-                            // [50.562111 15.165389]
-                        p.text-black-50
-                            | 13.00 svatební oběd pro rodinu
-                        p.text-black-50
-                            | 16.00 odpolední veselice
-                            a(href='https://goo.gl/maps/pDetzQV1dqDyptYr8') (mapa)
-                            // [50.404355 15.272998]
+                .row.d-flex.flex-wrap
+                    .col-sm-7.offset-sm-5.text-black-50
+                        dl
+                            dt 8:45
+                            dd příjezd do Střevače - rodina
+                            dt 9:15
+                            dd odjezd ze Střevače na Valdštejn - rodina
+                            dt 10:00
+                            dd sraz na dolním parkovišti pod hradem
+                                a(href='https://goo.gl/maps/PR6x5SctF2FDJega6') (mapa)
+                                // https://goo.gl/maps/ECD7vbfoDcc1eEPF8 [50.562111 15.165389] - asi horni parkoviste
+                                // https://goo.gl/maps/PR6x5SctF2FDJega6 [50.568581, 15.166057] - dolni parkoviste
+                            dt 10:45
+                            dd řazení svatebních hostů 
+                            dt 11:00
+                            dd slavnostní obřad na hradě Valdštejn
+                            dt 11:30
+                            dd společné focení (cca do 12:45)
+                            dt 13:00
+                            dd svatební oběd pro rodinu v Hotelu Restart
+                                a(href='https://goo.gl/maps/KScamNs95M7F38LL7') (mapa)
+                            dt 16:00
+                            dd odpolední veselice
+                                a(href='https://goo.gl/maps/pDetzQV1dqDyptYr8') (mapa)
+                                // [50.404355 15.272998]
+                            dt 22:00
+                            dd noční klid (veselice pokračuje uvnitř)
 
-        // Aktualne
-        section#aktualne
+        // Obrad
+        section#obrad
             .container
                 .row.d-flex.flex-wrap.align-items-center
-                    .col-sm-2.offset-sm-2
-                        img.img-fluid.d-block.mx-auto.rotate90(src='assets/img/kytka-s-pentli.png', alt='...')
-                    .col-sm-6
-                        p.text-black-50.mt-4#drazi
-                            | Drazí hosté,
-                        p.text-black-50
-                            | budeme potěšeni, když s námi přijdete prožít a oslavit náš svatební den.
-                        p.text-black-50
-                            | Dejte nám prosím nejpozději do začátku léta vědět, zda se s Vámi uvidíme.
-                        p.text-black-50
-                            | Děkujeme
+                    .col-sm-8.offset-sm-2
+                        h1 Svatební obřad
+                        div.mt-4
+                            h2 Rodina a svědci
+                            ul.text-black-50
+                                li Příjezd do Střevače nejpozději v 8:45, aby se stačila ozdobit auta, mohli jste se občerstvit, vyložit přivezené věci na odpolední veselici apod. 
+                                li Odjezd ze Střevače na Valdštejn v 9:15 &mdash; bohužel nemůžeme čekat na opozdilce!
+                                li Pokud by se stalo, že nebudete moci z jakéhokoli důvodu dorazit včas, prosím, kontaktujte svědkyni Šáťu na tel. čísle 604939497 a jeďte přímo na dolní parkoviště pod hradem. Až přijedeme, dáme Vám parkovací povolenku, se kterou budete puštěni až na horní parkoviště.
+                                li Prosíme o respektování toho, že při cestě autem z dolního parkoviště na horní se NESMÍ TROUBIT!
+                            h2 Ostatní hosté
+                            ul.text-black-50
+                                li Jeďte prosím přímo na dolní parkoviště pod hradem, kde odstavíte své vozy.
+                                li Na parkovišti se platí parkovné, které za vás ale uhradíme. Vše domluvíme u obsluhy.
+                                li Prosíme, abyste přijeli nejpozději v 10:00. Na místě již bude čekat "náš člověk", který Vás vyveze až k hradu.
+                                li Pokud byste chtěli jít pěšky &mdash; je to možné! K hradu vedou dvě cesty: jedna po silnici, která je dlouhá cca 2km nebo druhá kratší, ale náročnější, která není vhodná pro kočárky a malé děti. 
+
+
+        // Veselice
+        section#veselice
+            .container
+                .row.d-flex.flex-wrap.align-items-center
+                    .col-sm-8.offset-sm-2
+                        h1 Veselice
+                        div.mt-4
+                            ul.text-black-50
+                                li Ve vesnici budou šipky “SVATBA”. V případě, že areál nebudete moci i přesto najít, volejte svědkyni Šátě.
+                                li Na veselici si obklékněte cokoli, v čem se budete cítit dobře a pohodlně.
+
+                            h2 Nocleh
+                            ul.text-black-50
+                                li Prosíme, kdo budete chtít ve Střevači přespat, nahlaste se co nejdříve, počet míst je omezen (ještě je volných asi 10 lůžek).
+                                li Pro dobrodruhy se pokusíme ještě zjistit, zda se smí v areálu postavit stan.
+
+                            h2 Parkování
+                            ul.text-black-50
+                                li Prosíme hosty, aby neparkovali přímo před areálem, kde bude vyhrazeno asi 7&nbsp;míst - ty bychom rádi využili pro rodinu a svědky.
+                                li Parkovací možnosti pro ostatní hosty ještě upřesníme po dohodě s MÚ.
+
+                            h2 Místní pravidla
+
+                            p Prosíme o respektování následujících pravidel, jinak nás čeká pokuta.
+
+                            ul.text-black-50
+                                li V celém areálu hřiště je zakázáno kouřit.
+                                li Také je zakázáno pouštět ohňostroj.
+                                li Od 22:00 platí noční klid. Z tohoto důvodu se přesuneme dovnitř, kde se můžeme dále veselit.
+
+
+        // Dary
+        section#dary.text-center
+            .container-fluid
+                .row
+                    .col-sm-12
+                        h1 Svatební dary
+                .row.d-flex.flex-wrap.align-items-center
+                    .col-sm-3.offset-sm-2
+                        img.img-fluid(src='assets/img/ptak-s-kytkou.png', alt='...')
+                    .col-sm-5
+                        p.text-black-50.mt-2
+                            | Jelikož vše, co potřebujeme, již máme, potěší nás nějaká ta korunka. :-)
+
+
 
         // Kontakty
         section#kontakty
@@ -118,15 +208,17 @@ html(lang='cs')
                 .row.d-flex.flex-wrap.align-items-center
                     .col-8.offset-2
                         p.text-black-50.mt-4
-                            | Budete-li mít jakékoli dotazy, neváhejte se na nás obrátit. Těšíme se na Vás.
-                        p.text-black-50.mt-4.text-right.mb-0
-                            | Lenka Ryvolová a Leoš Klaban
-                        p#address.text-black-50.text-right
-                            | Marie Pujmanové 1755/1, 251 01 Říčany
-                        p.text-black-50.text-right
+                            | Budete-li mít jakékoli dotazy, neváhejte se na nás obrátit.
+                        p.text-black-50.text-center.mt-4.mb-0
+                            | Lenka Ryvolová a&nbsp;Leoš&nbsp;Klaban
+                        p.text-black-50.text-center.mb-0
                             a.lenka-email lenka
-                            br
+                            | a
                             a.leos-email leos
+                        p#address.text-black-50.text-center
+                            | Marie Pujmanové 1755/1, 251 01 Říčany
+                        p.text-right.mt-4
+                            | Těšíme se na Vás.
 
         // Footer
         footer.footer.bg-black.small.text-center.text-white-50
